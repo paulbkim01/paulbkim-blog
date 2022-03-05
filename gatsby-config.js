@@ -62,9 +62,6 @@ module.exports = {
         description: `백엔드 개발자 김폴의 개인 블로그`,
         start_url: `/`,
         background_color: `#fff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
@@ -116,7 +113,7 @@ module.exports = {
                 allPost(sort: { fields: date, order: DESC }) {
                   nodes {
                     title
-                    date(formatString: "YYYY MM, D")
+                    date(formatString: "MMMM D, YYYY")
                     excerpt
                     slug
                   }
