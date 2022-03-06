@@ -16,16 +16,15 @@ module.exports = {
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
       options: {
         navigation: [
           {
-            title: `블로그`,
-            slug: `/blog`,
-          },
-          {
             title: `프로필`,
             slug: `/profile`,
+          },
+          {
+            title: `블로그`,
+            slug: `/blog`,
           },
         ],
         externalLinks: [
@@ -34,6 +33,7 @@ module.exports = {
             url: `https://github.com/paulbkim01`,
           },
         ],
+        formatString: `MM-DD-YYYY`,
       },
     },
     {
@@ -43,8 +43,7 @@ module.exports = {
         preconnect: [`https://fonts.gstatic.com`],
         interval: 300,
         timeout: 30000,
-        // If you plan on changing the font you'll also need to adjust the Theme UI config to edit the CSS
-        // See: https://github.com/LekoArts/gatsby-themes/tree/main/examples/minimal-blog#changing-your-fonts
+
         web: [
           {
             name: `IBM Plex Sans`,
@@ -63,6 +62,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#fff`,
         display: `standalone`,
+
         icons: [
           {
             src: `/android-chrome-192x192.png`,

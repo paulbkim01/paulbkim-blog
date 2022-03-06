@@ -21,14 +21,6 @@ const Footer = () => {
       <div>
         &copy; {new Date().getFullYear()} by Paul B. Kim. All rights reserved.
       </div>
-      <div>
-        <Link
-          aria-label='Link to the GitHub repository'
-          href='https://github.com/paulbkim01/paulbkim-blog'
-        >
-          Repo
-        </Link>
-      </div>
     </footer>
   );
 };
