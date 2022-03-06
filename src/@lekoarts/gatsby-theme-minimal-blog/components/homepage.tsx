@@ -44,7 +44,7 @@ const Homepage = ({ posts }: PostsProps) => {
       >
         <Hero />
       </section>
-      <Title text='최신 블로그'>
+      <Title text='최신 글'>
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>모든 글</Link>
       </Title>
       <Listing posts={posts} showTags={false} />
